@@ -1,0 +1,82 @@
+@import "variables";
+
+// media-queries
+
+@mixin large-screen() {
+  @media only screen and (max-width: 1200px){
+    @content;
+  }
+}
+
+@mixin medium-large-screen() {
+  @media only screen and (min-width: 992px){
+    @content;
+  }
+}
+
+@mixin medium-screen() {
+  @media only screen and (max-width: 991px){
+    @content;
+  }
+}
+
+@mixin medium-small-screen() {
+  @media only screen and (min-width: 768px) and (max-width: 991px){
+    @content;
+  }
+}
+
+@mixin small-screen() {
+  @media only screen and (max-width: 767px){
+    @content;
+  }
+}
+
+@mixin small-screen--up() {
+  @media only screen and (min-width: 768px){
+    @content;
+  }
+}
+
+@mixin tiny-screen() {
+  @media only screen and (max-width: 480px){
+    @content;
+  }
+}
+
+@mixin site-btn {
+  &__btn {
+    padding: 19px 52px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $yellow;
+    border-radius: 3px;
+    transition: background-color .7s;
+
+    &:hover {
+      background-color: #fcde75;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+
+
+//fonts
+@mixin logo() {
+
+}
+
+@mixin header__menu--link() {
+
+}

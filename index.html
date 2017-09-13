@@ -1,24 +1,91 @@
 <!DOCTYPE html>
 <html >
     <head>
-        <title>Template</title>
+        <title>Golden Studio</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.min.css">
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link href="golden-ico.ico" rel="shortcut icon" type="image/x-icon" />
     </head>
     <body>
         <!-- HEADER -->
-        <header class="header">
-
+        <header class="header" id="home">
+            <div id="navbar-fixed-top">
+                <div class="container-fluid header__top--wrap">
+                    <div class="header__top">
+                            <div class="navbar-header">
+                                <a href="#" class="navbar-brand"><img src="images/logo.png" alt="" class="header__logo"></a>
+                                <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                                    <i class="fa fa-bars header__menu--ico" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbar">
+                                <ul class="nav navbar-nav navbar-right header__menu">
+                                    <li><a href="#home" class="header__menu--link">home</a></li>
+                                    <li><a href="#services" class="header__menu--link">services</a></li>
+                                    <li><a href="#portfolio" class="header__menu--link">portfolio</a></li>
+                                    <li><a href="#about" class="header__menu--link">about</a></li>
+                                    <li><a href="#contact" class="header__menu--link">contact</a></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+                <div class="header__content">
+                    <div class="container-fluid">
+                        <h2>welcome to our studio!</h2>
+                        <h1>it’s nice to meet you</h1>
+                        <a href="#" class="header__btn">tell me more</a>
+                    </div>
+                </div>
         </header>
+
+        <!-- SERVICES -->
+        <section class="services" id="services">
+            <div class="container-fluid">
+                <h2>services</h2>
+                <h4>Proin iaculis purus consequat sem cure.</h4>
+                <div class="col-sm-4">
+                    <div class="services__ico">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <h3>E-Commerce</h3>
+                    <p>Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="services__ico">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <h3>Responsive Web</h3>
+                    <p>Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="services__ico">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div>
+                    <h3>Web Security</h3>
+                    <p>Proin iaculis purus consequat sem cure
+                        digni ssim. Donec porttitora entum suscipit
+                        aenean rhoncus posuere odio in tincidunt.</p>
+                </div>
+            </div>
+        </section>
+
 
         <!-- FOOTER -->
         <footer class="footer">
 
         </footer>
+
+
+
         <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/main.min.js"></script>
+        <script src="js/swiper.jquery.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
