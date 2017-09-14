@@ -1,5 +1,5 @@
 $(function () {
-
+    // Header PopUp
     $('.navbar-toggle').on('click', function() {
         $('.navbar-collapse').slideToggle();
     });
@@ -22,6 +22,15 @@ $(function () {
         }
     });
 
+    //Swiper Slider
+    var swiper = new Swiper('.swiper-container', {
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: false,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        spaceBetween: 0,
+        grabCursor: true
+    });
 });
 
 

@@ -8704,8 +8704,8 @@ button.swiper-pagination-bullet {
 
 .fixed {
   background-color: #777;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   opacity: .8; }
 
 .services {
@@ -8773,13 +8773,14 @@ button.swiper-pagination-bullet {
     font: italic 400 16px "Droid Serif", serif;
     text-align: center; }
   .portfolio__img {
-    border: none;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    border: none; }
   .portfolio__content {
+    height: 395px;
     margin: 0 auto 50px auto; }
     .portfolio__content figure {
-      margin: 0 auto;
       max-width: 291px;
+      margin: 0 auto;
       background-color: #fff; }
     .portfolio__content figcaption {
       padding-bottom: 27px;
@@ -8792,6 +8793,50 @@ button.swiper-pagination-bullet {
         font: italic 400 14px "Droid Serif", serif;
         color: #737373;
         text-align: center; }
+
+.partners {
+  max-width: 942px;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 56px; }
+  .partners__slide--1 {
+    background: url("../images/partners-img-1.jpg") no-repeat center; }
+  .partners__slide--2 {
+    background: url("../images/partners-img-2.jpg") no-repeat center; }
+  .partners__slide--3 {
+    background: url("../images/partners-img-3.jpg") no-repeat center; }
+  .partners__slide--4 {
+    background: url("../images/partners-img-4.jpg") no-repeat center; }
+  .partners__slide--5 {
+    background: url("../images/partners-img-1.jpg") no-repeat center; }
+  .partners__slide--6 {
+    background: url("../images/partners-img-2.jpg") no-repeat center; }
+  .partners__slide--7 {
+    background: url("../images/partners-img-3.jpg") no-repeat center; }
+  .partners__slide--8 {
+    background: url("../images/partners-img-4.jpg") no-repeat center; }
+  .partners__slide--9 {
+    background: url("../images/partners-img-1.jpg") no-repeat center; }
+  .partners__slide--10 {
+    background: url("../images/partners-img-2.jpg") no-repeat center; }
+
+.swiper-container {
+  width: 100%;
+  height: 50px; }
+
+.swiper-slide {
+  text-align: center;
+  width: 25%; }
+  @media only screen and (max-width: 767px) {
+    .swiper-slide {
+      width: 50%; } }
+  @media only screen and (max-width: 480px) {
+    .swiper-slide {
+      width: 100%; } }
+
+.swiper-scrollbar {
+  margin-bottom: -2px;
+  bottom: 0 !important; }
 
 * {
   margin: 0;

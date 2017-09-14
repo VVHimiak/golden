@@ -31,16 +31,17 @@
   }
 
   &__img {
-    border: none;
     margin-bottom: 30px;
+    border: none;
   }
 
-  &__content {
+  &__content { 
+    height: 395px;
     margin: 0 auto 50px auto;
 
     figure {
-      margin: 0 auto;
       max-width: 291px;
+      margin: 0 auto;
       background-color: $white;
     }
 

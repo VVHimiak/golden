@@ -1,0 +1,63 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.partners {
+  max-width: $second-width;
+  margin: 0 auto;
+  padding-top: 56px;
+  padding-bottom: 56px;
+
+  &__slide--1 {
+    background: url("../images/partners-img-1.jpg") no-repeat center;
+  }
+  &__slide--2 {
+    background: url("../images/partners-img-2.jpg") no-repeat center;
+  }
+  &__slide--3 {
+    background: url("../images/partners-img-3.jpg") no-repeat center;
+  }
+  &__slide--4 {
+    background: url("../images/partners-img-4.jpg") no-repeat center;
+  }
+  &__slide--5 {
+    background: url("../images/partners-img-1.jpg") no-repeat center;
+  }
+  &__slide--6 {
+    background: url("../images/partners-img-2.jpg") no-repeat center;
+  }
+  &__slide--7 {
+    background: url("../images/partners-img-3.jpg") no-repeat center;
+  }
+  &__slide--8 {
+    background: url("../images/partners-img-4.jpg") no-repeat center;
+  }
+  &__slide--9 {
+    background: url("../images/partners-img-1.jpg") no-repeat center;
+  }
+  &__slide--10 {
+    background: url("../images/partners-img-2.jpg") no-repeat center;
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  width: 25%;
+
+  @include small-screen() {
+    width: 50%;
+  }
+
+  @include tiny-screen(){
+    width: 100%;
+  }
+}
+
+.swiper-scrollbar {
+  margin-bottom: -2px;
+  bottom: 0!important;
+}
