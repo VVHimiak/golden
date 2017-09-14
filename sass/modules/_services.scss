@@ -1,2 +1,55 @@
 @import "../base/variables";
 @import "../base/mixins";
+
+.services {
+  max-width: $second-width + 30px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 118px;
+
+  &__title {
+    margin: 0;
+    color: $black;
+    line-height: 75px!important;
+
+    @include site-h2();
+  }
+
+  &__subtitle {
+    margin: 0 0 45px 0;
+    color: $gray;
+
+    @include site-h4();
+  }
+
+  &__ico {
+    width: 72px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    border: 3px solid $yellow;
+    border-radius: 50%;
+
+    i {
+      font-size: 30px;
+      line-height: 66px;
+      color: $yellow;
+    }
+  }
+
+  &__product--name {
+    margin: 0;
+    line-height: 60px!important;
+
+    @include site-h3();
+
+    a {  color: $black;  }
+  }
+
+  &__product--description {
+    margin: 0;
+    font: 400 14px $third-font;
+    line-height: 22px!important;
+    color: $gray;
+    text-align: center;
+  }
+}

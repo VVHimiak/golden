@@ -12,7 +12,7 @@ $(function () {
                 'padding-left' : '15px',
                 'padding-right' : '15px'
             });
-            $('.header__content').css('margin-top', 235);
+            $('.header__content').css('margin-top', 240);
             $('#navbar-fixed-top').addClass('navbar-fixed-top');
             $('.header__top--wrap').addClass('fixed');
         } else {

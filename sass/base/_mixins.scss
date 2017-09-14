@@ -73,9 +73,23 @@
 
 
 //fonts
-@mixin logo() {
-
+@mixin site-h2 {
+  font: 700 40px $first-font;
+  text-transform: uppercase;
+  text-align: center;
 }
+
+@mixin site-h3 {
+  font: 700 18px $first-font;
+  text-align: center;
+}
+
+@mixin site-h4 {
+  font: italic 400 16px $second-font;
+  text-align: center;
+}
+
+
 
 @mixin header__menu--link() {
 

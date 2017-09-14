@@ -1,0 +1,62 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.portfolio {
+  max-width: $first-width;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: $bg-color-portfolio;
+
+  &__wrap {
+    max-width: $second-width +30px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  &__title {
+    margin: 0;
+    color: $black;
+    line-height: 75px!important;
+
+    @include site-h2();
+  }
+
+  &__subtitle {
+    margin: 0 0 75px 0;
+    color: $gray;
+
+    @include site-h4();
+  }
+
+  &__img {
+    border: none;
+    margin-bottom: 30px;
+  }
+
+  &__content {
+    margin: 0 auto 50px auto;
+
+    figure {
+      margin: 0 auto;
+      max-width: 291px;
+      background-color: $white;
+    }
+
+    figcaption {
+      padding-bottom: 27px;
+      text-transform: capitalize;
+      
+      a {  color: $black;
+        @include site-h3();
+      }
+
+      span {
+        font: italic 400 14px $second-font;
+        color: $gray-portfolio;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -2,13 +2,17 @@
 @import "../base/mixins";
 
 .header {
-  margin-bottom: 100px;
   padding: 45px 0 160px 0;
   background: url(../images/header-bg.jpg) no-repeat center bottom;
   background-size: cover;
 
   &__logo {
+    padding-top: 5px;
     padding-left: 15px;
+
+    @include small-screen() {
+      padding-left: 0;
+    }
   }
 
   &__top--wrap {
@@ -17,16 +21,14 @@
     padding: 0;
   }
 
-  &__menu {
-    padding-top: 5px;
-  }
+  &__menu {  padding-top: 8px;  }
 
   &__menu--link {
     font-weight: $regular;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-family: $first-font;
     color: $white;
+    text-transform: uppercase;
     text-align: center;
     transition: color .7s;
 
@@ -51,26 +53,20 @@
       margin: -8px 0 30px 0;
       font-style: italic;
       font-size: 40px;
-      font-family: 'Droid Serif', serif;
+      font-family: $second-font;
       text-align: center;
       text-transform: capitalize;
 
-      @include tiny-screen() {
-        font-size: 36px;
-      }
+      @include tiny-screen() {  font-size: 36px;  }
     }
 
     h1 {
       margin: 0 0 48px 0;
-      font-weight: 700;
-      font-size: 75px;
-      font-family: 'Montserrat', sans-serif;
+      font: 700 75px $first-font;
       text-align: center;
       text-transform: uppercase;
 
-      @include tiny-screen() {
-        font-size: 69px;
-      }
+      @include tiny-screen() {  font-size: 69px;  }
     }
   }
 
@@ -83,18 +79,14 @@
   border: none;
 
   &-right {
-    @include small-screen--up() {
-      margin-right: 0;
-    }
+    @include small-screen--up() {  margin-right: 0;  }
   }
 
   &-brand {
     height: auto;
     padding: 0;
 
-    @include small-screen() {
-      padding-left: 15px;
-    }
+    @include small-screen() {  padding-left: 15px;  }
   }
 
   &-nav {
@@ -118,7 +110,7 @@
   }
 
   &-toggle {
-    margin: 0 15px 0 0;
+    margin: 2px 15px 0 0;
     padding: 0;
     color: #fff;
     font-size: 30px;
@@ -130,6 +122,7 @@
 //js class
 .fixed {
   background-color: $gray;
-  border-radius: 3px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   opacity: .8;
 }

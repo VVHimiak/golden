@@ -8595,24 +8595,27 @@ button.swiper-pagination-bullet {
 /* TITLES
  * -------------------------- */
 .header {
-  margin-bottom: 100px;
   padding: 45px 0 160px 0;
   background: url(../images/header-bg.jpg) no-repeat center bottom;
   background-size: cover; }
   .header__logo {
+    padding-top: 5px;
     padding-left: 15px; }
+    @media only screen and (max-width: 767px) {
+      .header__logo {
+        padding-left: 0; } }
   .header__top--wrap {
     max-width: 972px;
     margin: 0 auto;
     padding: 0; }
   .header__menu {
-    padding-top: 5px; }
+    padding-top: 8px; }
   .header__menu--link {
     font-weight: 400;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
+    text-transform: uppercase;
     text-align: center;
     transition: color .7s; }
     .header__menu--link:hover {
@@ -8630,7 +8633,7 @@ button.swiper-pagination-bullet {
       margin: -8px 0 30px 0;
       font-style: italic;
       font-size: 40px;
-      font-family: 'Droid Serif', serif;
+      font-family: "Droid Serif", serif;
       text-align: center;
       text-transform: capitalize; }
       @media only screen and (max-width: 480px) {
@@ -8638,9 +8641,7 @@ button.swiper-pagination-bullet {
           font-size: 36px; } }
     .header__content h1 {
       margin: 0 0 48px 0;
-      font-weight: 700;
-      font-size: 75px;
-      font-family: 'Montserrat', sans-serif;
+      font: 700 75px "Montserrat", sans-serif;
       text-align: center;
       text-transform: uppercase; }
       @media only screen and (max-width: 480px) {
@@ -8694,7 +8695,7 @@ button.swiper-pagination-bullet {
       border-top: 1px solid #ccc !important;
       box-shadow: none; } }
   .navbar-toggle {
-    margin: 0 15px 0 0;
+    margin: 2px 15px 0 0;
     padding: 0;
     color: #fff;
     font-size: 30px;
@@ -8703,8 +8704,94 @@ button.swiper-pagination-bullet {
 
 .fixed {
   background-color: #777;
-  border-radius: 3px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   opacity: .8; }
+
+.services {
+  max-width: 972px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 118px; }
+  .services__title {
+    margin: 0;
+    color: #222;
+    line-height: 75px !important;
+    font: 700 40px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  .services__subtitle {
+    margin: 0 0 45px 0;
+    color: #777;
+    font: italic 400 16px "Droid Serif", serif;
+    text-align: center; }
+  .services__ico {
+    width: 72px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    border: 3px solid #fed136;
+    border-radius: 50%; }
+    .services__ico i {
+      font-size: 30px;
+      line-height: 66px;
+      color: #fed136; }
+  .services__product--name {
+    margin: 0;
+    line-height: 60px !important;
+    font: 700 18px "Montserrat", sans-serif;
+    text-align: center; }
+    .services__product--name a {
+      color: #222; }
+  .services__product--description {
+    margin: 0;
+    font: 400 14px "Roboto Slab", serif;
+    line-height: 22px !important;
+    color: #777;
+    text-align: center; }
+
+.portfolio {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+  background-color: #f7f7f7; }
+  .portfolio__wrap {
+    max-width: 972px;
+    margin: 0 auto;
+    padding: 0; }
+  .portfolio__title {
+    margin: 0;
+    color: #222;
+    line-height: 75px !important;
+    font: 700 40px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  .portfolio__subtitle {
+    margin: 0 0 75px 0;
+    color: #777;
+    font: italic 400 16px "Droid Serif", serif;
+    text-align: center; }
+  .portfolio__img {
+    border: none;
+    margin-bottom: 30px; }
+  .portfolio__content {
+    margin: 0 auto 50px auto; }
+    .portfolio__content figure {
+      margin: 0 auto;
+      max-width: 291px;
+      background-color: #fff; }
+    .portfolio__content figcaption {
+      padding-bottom: 27px;
+      text-transform: capitalize; }
+      .portfolio__content figcaption a {
+        color: #222;
+        font: 700 18px "Montserrat", sans-serif;
+        text-align: center; }
+      .portfolio__content figcaption span {
+        font: italic 400 14px "Droid Serif", serif;
+        color: #737373;
+        text-align: center; }
 
 * {
   margin: 0;
@@ -8715,6 +8802,7 @@ html, body {
   height: 100%; }
 
 body {
+  box-sizing: border-box;
   min-width: 320px;
   max-width: 1400px;
   margin: 0 auto;
