@@ -20,6 +20,18 @@
   }
 }
 
+@mixin medium-screen-about-up() {
+  @media only screen and (min-width: 921px){
+    @content;
+  }
+}
+
+@mixin medium-screen-about() {
+  @media only screen and (max-width: 920px){
+    @content;
+  }
+}
+
 @mixin medium-small-screen() {
   @media only screen and (min-width: 768px) and (max-width: 991px){
     @content;
@@ -70,7 +82,14 @@
   }
 }
 
-
+@mixin img-about {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 182px;
+  height: 182px;
+  border: 7px solid $decoration-color-about;
+  border-radius: 50%;
+}
 
 //fonts
 @mixin site-h2 {
@@ -89,8 +108,3 @@
   text-align: center;
 }
 
-
-
-@mixin header__menu--link() {
-
-}

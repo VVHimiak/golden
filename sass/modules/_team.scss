@@ -1,0 +1,30 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.team {
+  max-width: $first-width;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: $bg-color-team;
+
+  &__wrap {
+    max-width: $second-width;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 0 0 15px 0;
+    color: $black;
+    line-height: 75px !important;
+
+    @include site-h2();
+  }
+
+  &__subtitle {
+    margin: 0 0 75px 0;
+    color: $gray;
+
+    @include site-h4();
+  }
+}

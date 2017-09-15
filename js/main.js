@@ -25,7 +25,7 @@ $(function () {
     //Swiper Slider
     var swiper = new Swiper('.swiper-container', {
         scrollbar: '.swiper-scrollbar',
-        scrollbarHide: false,
+        scrollbarHide: true,
         slidesPerView: 'auto',
         centeredSlides: false,
         spaceBetween: 0,

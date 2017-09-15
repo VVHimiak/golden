@@ -1,0 +1,31 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.copyright {
+  max-width: $second-width;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: $gray;
+
+  &__left {
+    font: 400 14px/22px $first-font;
+    color: $gray-copyright;
+  }
+
+  &__center {
+    text-align: center!important;
+    margin: 0 0 10px 0;
+
+    a {
+      display: inline-block;
+      width: 41px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: $white;
+      line-height: 41px!important;
+      background-color: $black;
+      border-radius: 50%;
+    }
+  }
+}

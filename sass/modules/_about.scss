@@ -1,0 +1,148 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.about {
+  max-width: $second-width;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  &__title {
+    margin: 0 0 15px 0;
+    color: $black;
+    line-height: 75px!important;
+
+    @include site-h2();
+  }
+
+  &__subtitle {
+    margin: 0 0 75px 0;
+    color: $gray;
+
+    @include site-h4();
+  }
+
+  &__card {  position: relative;  }
+
+  &__text--left {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 305px;
+    max-height: 182px;
+    overflow: hidden;
+    text-align: right;
+
+    @include medium-screen-about() {
+      position: static;
+      width: 80%;
+      margin: 0 auto 45px auto;
+    }
+
+    h3 {
+      margin: 0 0 15px 0;
+      font: 700 18px $first-font;
+      color: $black;
+
+      @include medium-screen-about() {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      span {  text-transform: uppercase;  }
+    }
+
+    p {
+      margin: 0;
+      font: 400 14px/20px $third-font;
+      color: $gray;
+
+      @include medium-screen-about() {
+        text-align: center;
+      }
+    }
+  }
+
+  &__text--right {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    width: 305px;
+    max-height: 182px;
+    overflow: hidden;
+    text-align: left;
+
+    @include medium-screen-about() {
+      position: static;
+      width: 80%;
+      margin: 0 auto 45px auto;
+    }
+
+    h3 {
+      margin: 0 0 15px 0;
+      font: 700 18px $first-font;
+      color: $black;
+
+      @include medium-screen-about() {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      span {  text-transform: uppercase;  }
+    }
+
+    p {
+      margin: 0;
+      font: 400 14px/20px $third-font;
+      color: $gray;
+
+      @include medium-screen-about() {
+        text-align: center;
+      }
+    }
+  }
+
+  &__line {
+    display: none;
+    margin: 0 auto;
+    width: 2px;
+    height: 93px;
+    background-color: $decoration-color-about;
+
+    @include medium-screen-about-up() {
+      display: block;
+    }
+  }
+
+  &__img--1 {  background: url('../images/about-img-1.jpg') no-repeat center;
+    @include img-about();
+  }
+
+  &__img--2 {  background: url('../images/about-img-2.jpg') no-repeat center;
+    @include img-about();
+  }
+
+  &__img--3 {  background: url('../images/about-img-3.jpg') no-repeat center bottom;
+    @include img-about();
+  }
+
+  &__img--4 {  background: url('../images/about-img-4.jpg') no-repeat center;
+    @include img-about();
+  }
+
+  &__img--5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: $yellow ;
+
+    @include img-about();
+
+    p {
+      font: 700 18px/25px $first-font;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+}
