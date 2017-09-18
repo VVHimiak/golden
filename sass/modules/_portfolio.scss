@@ -9,10 +9,14 @@
   text-align: center;
   background-color: $bg-color-portfolio;
 
+  @include small-screen() {
+    padding-top: 50px;
+    padding-bottom: 35px;
+  }
+
   &__wrap {
-    max-width: $second-width +30px;
+    max-width: $second-width + 30px;
     margin: 0 auto;
-    padding: 0;
   }
 
   &__title {
@@ -26,6 +30,10 @@
   &__subtitle {
     margin: 0 0 75px 0;
     color: $gray;
+
+    @include small-screen() {
+      margin-bottom: 35px;
+    }
 
     @include site-h4();
   }

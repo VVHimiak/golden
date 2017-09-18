@@ -8,6 +8,11 @@
   padding-bottom: 120px;
   background-color: $bg-color-team;
 
+  @include small-screen() {
+    padding-top: 50px;
+    padding-bottom: 57px;
+  }
+
   &__wrap {
     max-width: $second-width;
     margin: 0 auto;
@@ -25,6 +30,74 @@
     margin: 0 0 75px 0;
     color: $gray;
 
+    @include small-screen() {
+      margin-bottom: 35px;
+    }
+
     @include site-h4();
+  }
+
+  &__img--1 {  background: url(../images/team-1.jpg) no-repeat center;
+
+    @include img-team();
+  }
+
+  &__img--2 {  background: url(../images/team-2.jpg) no-repeat center;
+
+    @include img-team();
+  }
+
+  &__img--3 {  background: url(../images/team-3.jpg) no-repeat center;
+
+    @include img-team();
+  }
+
+  &__subscribe {  margin-bottom: 50px;
+
+    h4 {
+      margin: 0 0 10px 0;
+      font: 700 16px $first-font;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    h5 {
+      margin: 0 0 10px 0;
+      text-align: center;
+      font: 400 14px $third-font;
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__ico {
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 19px;
+      line-height: 34px;
+      color: $black;
+      text-align: center;
+      border: 3px solid $black;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    width: 70%;
+    margin: 0 auto;
+    font: 400 16px $third-font;
+    color: $gray;
+    text-align: center;
+
+    @include medium-screen() {
+      width: 100%;
+    }
   }
 }

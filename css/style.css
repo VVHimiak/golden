@@ -8598,6 +8598,9 @@ button.swiper-pagination-bullet {
   padding: 45px 0 160px 0;
   background: url(../images/header-bg.jpg) no-repeat center bottom;
   background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    .header {
+      padding-bottom: 80px; } }
   .header__logo {
     padding-top: 5px;
     padding-left: 15px; }
@@ -8636,7 +8639,7 @@ button.swiper-pagination-bullet {
       font-family: "Droid Serif", serif;
       text-align: center;
       text-transform: capitalize; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 767px) {
         .header__content h2 {
           font-size: 36px; } }
     .header__content h1 {
@@ -8644,7 +8647,7 @@ button.swiper-pagination-bullet {
       font: 700 75px "Montserrat", sans-serif;
       text-align: center;
       text-transform: uppercase; }
-      @media only screen and (max-width: 480px) {
+      @media only screen and (max-width: 767px) {
         .header__content h1 {
           font-size: 69px; } }
   .header__btn {
@@ -8708,33 +8711,18 @@ button.swiper-pagination-bullet {
   border-bottom-right-radius: 20px;
   opacity: .8; }
 
-.copyright {
-  max-width: 942px;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #777; }
-  .copyright__left {
-    font: 400 14px/22px "Montserrat", sans-serif;
-    color: #555; }
-  .copyright__center {
-    text-align: center !important;
-    margin: 0 0 10px 0; }
-    .copyright__center a {
-      display: inline-block;
-      width: 41px;
-      margin-left: 5px;
-      margin-right: 5px;
-      color: #fff;
-      line-height: 41px !important;
-      background-color: #222;
-      border-radius: 50%; }
-
 .services {
-  max-width: 972px;
+  max-width: 942px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 118px; }
+  @media only screen and (max-width: 767px) {
+    .services {
+      padding-top: 50px;
+      padding-bottom: 37px; } }
+  @media only screen and (max-width: 767px) {
+    .services__wrap {
+      margin-bottom: 30px; } }
   .services__title {
     margin: 0;
     color: #222;
@@ -8747,6 +8735,9 @@ button.swiper-pagination-bullet {
     color: #777;
     font: italic 400 16px "Droid Serif", serif;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .services__subtitle {
+        margin-bottom: 35px; } }
   .services__ico {
     width: 72px;
     margin: 0 auto;
@@ -8778,10 +8769,13 @@ button.swiper-pagination-bullet {
   padding-bottom: 70px;
   text-align: center;
   background-color: #f7f7f7; }
+  @media only screen and (max-width: 767px) {
+    .portfolio {
+      padding-top: 50px;
+      padding-bottom: 35px; } }
   .portfolio__wrap {
     max-width: 972px;
-    margin: 0 auto;
-    padding: 0; }
+    margin: 0 auto; }
   .portfolio__title {
     margin: 0;
     color: #222;
@@ -8794,6 +8788,9 @@ button.swiper-pagination-bullet {
     color: #777;
     font: italic 400 16px "Droid Serif", serif;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .portfolio__subtitle {
+        margin-bottom: 35px; } }
   .portfolio__img {
     margin-bottom: 30px;
     border: none; }
@@ -8821,6 +8818,10 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 120px; }
+  @media only screen and (max-width: 767px) {
+    .about {
+      padding-top: 50px;
+      padding-bottom: 37px; } }
   .about__title {
     margin: 0 0 15px 0;
     color: #222;
@@ -8833,6 +8834,9 @@ button.swiper-pagination-bullet {
     color: #777;
     font: italic 400 16px "Droid Serif", serif;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .about__subtitle {
+        margin-bottom: 35px; } }
   .about__card {
     position: relative; }
   .about__text--left {
@@ -8962,6 +8966,10 @@ button.swiper-pagination-bullet {
   padding-top: 100px;
   padding-bottom: 120px;
   background-color: #f9f9f9; }
+  @media only screen and (max-width: 767px) {
+    .team {
+      padding-top: 50px;
+      padding-bottom: 57px; } }
   .team__wrap {
     max-width: 942px;
     margin: 0 auto; }
@@ -8977,6 +8985,65 @@ button.swiper-pagination-bullet {
     color: #777;
     font: italic 400 16px "Droid Serif", serif;
     text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .team__subtitle {
+        margin-bottom: 35px; } }
+  .team__img--1 {
+    background: url(../images/team-1.jpg) no-repeat center;
+    margin: 0 auto 25px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: contain; }
+  .team__img--2 {
+    background: url(../images/team-2.jpg) no-repeat center;
+    margin: 0 auto 25px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: contain; }
+  .team__img--3 {
+    background: url(../images/team-3.jpg) no-repeat center;
+    margin: 0 auto 25px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: contain; }
+  .team__subscribe {
+    margin-bottom: 50px; }
+    .team__subscribe h4 {
+      margin: 0 0 10px 0;
+      font: 700 16px "Montserrat", sans-serif;
+      text-align: center;
+      text-transform: capitalize; }
+    .team__subscribe h5 {
+      margin: 0 0 10px 0;
+      text-align: center;
+      font: 400 14px "Roboto Slab", serif; }
+    .team__subscribe p {
+      margin: 0;
+      text-align: center; }
+  .team__ico a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 19px;
+    line-height: 34px;
+    color: #222;
+    text-align: center;
+    border: 3px solid #222;
+    border-radius: 50%; }
+  .team__text {
+    width: 70%;
+    margin: 0 auto;
+    font: 400 16px "Roboto Slab", serif;
+    color: #777;
+    text-align: center; }
+    @media only screen and (max-width: 991px) {
+      .team__text {
+        width: 100%; } }
 
 .partners {
   max-width: 942px;
@@ -9020,6 +9087,134 @@ button.swiper-pagination-bullet {
 
 .swiper-scrollbar {
   bottom: 0 !important; }
+
+.contact {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 115px;
+  text-align: center;
+  background: url("../../images/contact-bg.jpg") no-repeat center;
+  background-size: cover; }
+  @media only screen and (max-width: 767px) {
+    .contact {
+      padding-top: 50px;
+      padding-bottom: 57px; } }
+  .contact__wrap {
+    max-width: 972px;
+    margin: 0 auto; }
+  .contact__title {
+    margin: 0;
+    color: #fff;
+    line-height: 75px !important;
+    font: 700 40px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center; }
+  .contact__subtitle {
+    margin: 0 0 75px 0;
+    color: #fff;
+    font: italic 400 16px "Droid Serif", serif;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .contact__subtitle {
+        margin-bottom: 35px; } }
+  .contact__name {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 27px;
+    font: 700 14px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+  .contact__email {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px;
+    margin-bottom: 27px;
+    font: 700 14px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+  .contact__subject {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 17px;
+    font: 700 14px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+    @media only screen and (max-width: 767px) {
+      .contact__subject {
+        margin-bottom: 27px; } }
+  .contact__message {
+    box-sizing: border-box;
+    width: 100%;
+    height: 210px;
+    max-width: 100%;
+    max-height: 210px;
+    padding: 20px;
+    overflow: hidden;
+    font: 700 14px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #bbb;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+  .contact__btn {
+    border: none;
+    margin-top: 30px;
+    box-shadow: 0 1px 0 0 #312e23;
+    padding: 19px 52px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fed136;
+    border-radius: 3px;
+    transition: background-color .7s; }
+    .contact__btn:hover {
+      background-color: #fcde75;
+      color: #fff;
+      text-decoration: none; }
+    .contact__btn:visited {
+      color: #fff;
+      text-decoration: none; }
+
+.copyright {
+  max-width: 942px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  @media only screen and (max-width: 767px) {
+    .copyright {
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+  .copyright__left {
+    font: 400 14px/51px "Montserrat", sans-serif;
+    color: #555; }
+    @media only screen and (max-width: 991px) {
+      .copyright__left {
+        text-align: center; } }
+    @media only screen and (max-width: 767px) {
+      .copyright__left {
+        line-height: normal; } }
+  .copyright__center {
+    text-align: center !important;
+    margin: 0 0 10px 0; }
+    .copyright__center a {
+      display: inline-block;
+      width: 41px;
+      margin-left: 5px;
+      margin-right: 5px;
+      color: #fff;
+      line-height: 41px !important;
+      background-color: #222;
+      border-radius: 50%; }
 
 * {
   margin: 0;

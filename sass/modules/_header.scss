@@ -6,6 +6,10 @@
   background: url(../images/header-bg.jpg) no-repeat center bottom;
   background-size: cover;
 
+  @include small-screen() {
+    padding-bottom: 80px;
+  }
+
   &__logo {
     padding-top: 5px;
     padding-left: 15px;
@@ -57,7 +61,7 @@
       text-align: center;
       text-transform: capitalize;
 
-      @include tiny-screen() {  font-size: 36px;  }
+      @include small-screen() {  font-size: 36px;  }
     }
 
     h1 {
@@ -66,11 +70,11 @@
       text-align: center;
       text-transform: uppercase;
 
-      @include tiny-screen() {  font-size: 69px;  }
+      @include small-screen() {  font-size: 69px;  }
     }
   }
 
-  @include site-btn();
+  &__btn {  @include site-btn(); }
 }
 
 //bootstrap-settings modifications

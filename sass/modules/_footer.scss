@@ -6,11 +6,23 @@
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $gray;
+
+  @include small-screen() {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   &__left {
-    font: 400 14px/22px $first-font;
+    font: 400 14px/51px $first-font;
     color: $gray-copyright;
+
+    @include medium-screen() {
+      text-align: center;
+    }
+
+    @include small-screen() {
+      line-height: normal;
+    }
   }
 
   &__center {
