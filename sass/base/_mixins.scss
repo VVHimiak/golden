@@ -80,6 +80,14 @@
     }
   }
 
+@mixin img-services {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  border: 3px solid $yellow;
+  border-radius: 50%;
+}
+
 @mixin img-about {
   margin: 0 auto;
   box-sizing: border-box;

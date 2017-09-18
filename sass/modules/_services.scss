@@ -37,18 +37,19 @@
     @include site-h4();
   }
 
-  &__ico {
-    width: 72px;
-    margin: 0 auto;
-    text-align: center;
-    border: 3px solid $yellow;
-    border-radius: 50%;
+  &__ico--1 { background: url("../images/services-img-1.png") no-repeat center;
 
-    i {
-      font-size: 30px;
-      line-height: 66px;
-      color: $yellow;
-    }
+    @include img-services();
+  }
+
+  &__ico--2 { background: url("../images/services-img-2.png") no-repeat center;
+
+    @include img-services();
+  }
+
+  &__ico--3 { background: url("../images/services-img-3.png") no-repeat center;
+
+    @include img-services();
   }
 
   &__product--name {
