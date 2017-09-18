@@ -9109,7 +9109,7 @@ button.swiper-pagination-bullet {
   padding-top: 100px;
   padding-bottom: 115px;
   text-align: center;
-  background: url("../../images/contact-bg.jpg") no-repeat center;
+  background: url("../images/contact-bg.jpg") no-repeat center;
   background-size: cover; }
   @media only screen and (max-width: 767px) {
     .contact {
